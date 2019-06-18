@@ -1,0 +1,109 @@
+{
+    "Navbar": {
+        "Title": "Namsor Chinese",
+        "Menu": {
+            "Home": "Home",
+            "Gender": "Gender",
+            "Translation": "Translation",
+            "Matching": "Matching",
+            "Signin": "Sign in"
+        }
+    },
+    "Intro": {
+        "Heading": "Welcome to Namsor Chinese names application",
+        "Description": "You can translate Pinyin to Chinese, identify gender from Pinyin/Chinese, or get the score/probability of a Chinese and Pinyin names to match.",
+        "Button": "Try Now"
+    },
+    "API": {
+        "Tabs": {
+            "Gender": "Gender",
+            "Translation": "Translation",
+            "Matching": "Matching"
+        },
+        "GenderTab": {
+            "Heading": "Gender",
+            "Description": "Find gender by first name and last name",
+            "Button": "Check",
+            "Error": "Make sure first name and last name are not empty.",
+            "ResultTitle": "'s gender is:",
+            "Male": "Male",
+            "Female": "Female"
+        },
+        "TranslationTab": {
+            "Heading": "Pinyin to Chinese",
+            "Description": "Translate Pinyin to Chinese characters",
+            "Button": "Translate",
+            "Error": "Make sure first name and last name are not empty.",
+            "ResultTitle": "'s Chinese name is (All possible names ranked by probabilities from high to low):"
+        },
+        "MatchingTab": {
+            "Heading": "Match Chinese name and pinyin name to see probability",
+            "Description": "Check probability of a Chinese name and pinyin name to match with each other",
+            "Button": "Match",
+            "ResultTitle1": "Matching probability between",
+            "ResultTitle2": "is: ",
+            "Error": "Make sure first name, last name, and Chinese name are not empty."
+        }
+    },
+    "Service": {
+        "Heading": "Start Free with 24/7 support",
+        "Description": "Our API is free to check up to 450 names per month. We have additional subscription plans to support your organization with higher volumes. With state-of-the-art infrastructure, we provide 99.95% uptime and 24/7 monitoring and maintenance",
+        "Button": "Start Free"
+    },
+    "MachineLearning": {
+        "Heading": "Machine Learning powered Namsor API",
+        "Description": "This service is powered by NamSor API, a powerful machine learning API to process Chinese names (detect gender, translate Pinyin to Chinese and calculate score/probability for matching Pinyin and Chinese name)."
+    },
+    "PricePlans": {
+        "Heading": "Fair, simple pricing for all",
+        "Description": "No additional costs. Pay for what you use.",
+        "BasicPlan": {
+            "Name": "Basic Plan",
+            "Unit": "month",
+            "Item1": "1 name API call uses 11 units",
+            "Item2": "Free up to 5000 units per Month",
+            "Item3": "Price overage: 0.005 USD",
+            "Button": "Get Started"
+        },
+        "ProPlan": {
+            "Name": "Pro Plan",
+            "Unit": "month",
+            "Item1": "Included : 10,000 units",
+            "Item2": "Lower price for overages",
+            "Item3": "Price overage: 0.003 USD",
+            "Button": "Get Started"
+        },
+        "UltraPlan": {
+            "Name": "Ultra Plan",
+            "Unit": "month",
+            "Item1": "Easy to access",
+            "Item2": "Included : 100,000 units",
+            "Item3": "Lower price for overages",
+            "Item4": "Price overage : 0.002 usd",
+            "Button": "Get Started"
+        }
+    },
+    "Footer": {
+        "NavSub": {
+            "Title": "Navigate",
+            "Gender": "Gender",
+            "Translation": "Translation",
+            "Matching": "Matching",
+            "Signin": "Sign in"
+        },
+        "ContactSub": {
+            "Title": "Contact"
+        },
+        "TermsConditions": "Terms and Conditions",
+        "Language": "Language",
+        "English": "English 英文",
+        "Chinese": "Chinese 中文"
+    },
+    "404": {
+        "Title": "Page not found",
+        "Button": "To Home"
+    },
+    "First Name": "First name, e.g., Xiaoming",
+    "Last Name": "Last name, e.g., Wang",
+    "Chinese Name": "Chinese name, e.g., 王小明"
+}
