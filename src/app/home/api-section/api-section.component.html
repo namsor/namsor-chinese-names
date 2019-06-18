@@ -1,0 +1,22 @@
+<section class="api-section-container">
+  <header>
+    <h2>{{"Intro.Heading" | translate}}</h2>
+    <p>{{"Intro.Description" | translate}}</p>
+    <button type="button" class="btn btn-outline-primary" (click)="scrollTo(main)">{{"Intro.Button" | translate}}</button>
+  </header>
+
+  <main #main>
+    <ul class="nav nav-tabs" >
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ '/gender']" [ngClass]="{'selected': currentTab === 'gender'}" (click)="currentTab = 'gender'">{{"API.Tabs.Gender" | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ '/translation']" [ngClass]="{'selected': currentTab === 'translation'}" (click)="currentTab = 'translation'">{{"API.Tabs.Translation" | translate}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ '/matching']" [ngClass]="{'selected': currentTab === 'matching'}" (click)="currentTab = 'matching'">{{"API.Tabs.Matching" | translate}}</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+  </main>
+</section>

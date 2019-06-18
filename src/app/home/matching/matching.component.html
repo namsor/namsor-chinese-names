@@ -1,0 +1,24 @@
+<section class="matching-section-container">
+  <header>
+    <h2>{{"API.MatchingTab.Heading" | translate}}</h2>
+    <p>{{"API.MatchingTab.Description" | translate}}</p>
+  </header>
+
+  <div class="input-group">
+    <input type="text" aria-label="Pinyin First name" [placeholder]="'First Name' | translate" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
+    <input type="text" aria-label="Pinyin Last name" [placeholder]="'Last Name' | translate" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <input type="text" aria-label="Chinese name" [placeholder]="'Chinese Name' | translate" class="form-control" [(ngModel)]="chineseName" (ngModelChange)="onInputChnage()">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="match()">
+        <span *ngIf="!loading">{{"API.MatchingTab.Button" | translate}}</span>
+        <i class="fas fa-spinner" *ngIf="loading"></i>
+      </button>
+    </div>
+  </div>
+  <p class="err-msg" *ngIf="err">{{"API.MatchingTab.Error" | translate}}</p>
+
+  <main *ngIf="response">
+    <p>{{"API.MatchingTab.ResultTitle1" | translate}} <span class="result-name">{{response.firstName}} {{response.lastName}}</span> and <span class="result-name">{{response.chineseName}}</span> {{"API.MatchingTab.ResultTitle2" | translate}}</p>
+    <span class="probability">{{probability | percent: '1.4-6'}}</span>
+  </main>
+</section>

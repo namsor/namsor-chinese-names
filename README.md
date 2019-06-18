@@ -1,2 +1,5 @@
 # namsor-chinese-names
-Infer gender of a Chinese name, Chinese name translation and matching in Pinyin and Chinese.
+
+<h3>Build and publish</h3>
+ng build --prod --base-href "https://haowang201.com/namsor-chinese-names/" <br>
+npx angular-cli-ghpages --dir=dist/namsor-chinese-names

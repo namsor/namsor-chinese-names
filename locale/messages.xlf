@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="PageHeader" datatype="html">
+        <source>Namsor Chinese</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Title for the website</note>
+        <note priority="1" from="meaning">Page title</note>
+      </trans-unit>
+      <trans-unit id="PageHeaderMenuItem1" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">home</note>
+        <note priority="1" from="meaning">Menu Item Home</note>
+      </trans-unit>
+      <trans-unit id="PageHeaderMenuItem2" datatype="html">
+        <source>Gender</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Go the gender check page</note>
+        <note priority="1" from="meaning">Menu Item Gender</note>
+      </trans-unit>
+      <trans-unit id="PageHeaderMenuItem3" datatype="html">
+        <source>Translation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Go to translation of pinyin to chinese page</note>
+        <note priority="1" from="meaning">Menu Item Translation</note>
+      </trans-unit>
+      <trans-unit id="PageHeaderMenuItem4" datatype="html">
+        <source>Matching</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Go to probability matching between pinyin and chinese name page</note>
+        <note priority="1" from="meaning">Menu Item Matching</note>
+      </trans-unit>
+      <trans-unit id="PageHeaderMenuItem5" datatype="html">
+        <source>Sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Sign In</note>
+        <note priority="1" from="meaning">Menu Item Sign in</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

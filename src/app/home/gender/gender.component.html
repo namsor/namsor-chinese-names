@@ -1,0 +1,26 @@
+<section class="gender-section-container">
+  <header>
+    <h2>{{"API.GenderTab.Heading" | translate}}</h2>
+    <p>{{"API.GenderTab.Description" | translate}}</p>
+  </header>
+
+  <div class="input-group">
+    <!-- <div class="input-group-prepend">
+      <span class="input-group-text">First and last name</span>
+    </div> -->
+    <input type="text" aria-label="First name" [placeholder]="'First Name' | translate" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
+    <input type="text" aria-label="Last name" [placeholder]="'Last Name' | translate" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="search()">
+        <span *ngIf="!loading">{{"API.GenderTab.Button" | translate}}</span>
+        <i class="fas fa-spinner" *ngIf="loading"></i>
+      </button>
+    </div>
+  </div>
+  <p class="err-msg" *ngIf="err">{{"API.GenderTab.Error" | translate}}</p>
+
+  <main *ngIf="response">
+    <p><span class="result-name">{{response.firstName}} {{response.lastName}}</span>{{ "API.GenderTab.ResultTitle" | translate}}</p>
+    <span class="gender-text">{{response.likelyGender.toLocaleUpperCase() === 'MALE' ? ("API.GenderTab.Male" | translate) : ("API.GenderTab.Female" | translate)}}</span>
+  </main>
+</section>

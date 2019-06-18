@@ -1,0 +1,49 @@
+<footer>
+  <section class="info-section">
+    <section class="navigation">
+      <h5>{{ 'Footer.NavSub.Title' | translate }}</h5>
+      <a href='gender'>{{ 'Footer.NavSub.Gender' | translate }}</a>
+      <a href='translation'>{{ 'Footer.NavSub.Translation' | translate }}</a>
+      <a href='matching'>{{ 'Footer.NavSub.Matching' | translate }}</a>
+      <a class="sign-in-anchor" href="https://v2.namsor.com/NamSorAPIv2/sign-in.html">
+        <span>{{ 'Footer.NavSub.Signin' | translate }}</span>
+      </a>
+    </section>
+    <section class="contact">
+      <h5>{{ 'Footer.ContactSub.Title' | translate }}</h5>
+      <section class="email-section">
+        <i class="far fa-envelope"></i>
+        <a class="email-anchor" href="mailto:contact@namsor.com">contact@namsor.com</a>
+      </section>
+    </section>
+    <section class="social-media">
+      <div class="dropdown">
+        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ 'Footer.Language' | translate }}
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" (click)="changeLanguage('en')">{{ 'Footer.English' | translate }}</a>
+          <a class="dropdown-item" (click)="changeLanguage('zh')">{{ 'Footer.Chinese' | translate }}</a>
+        </div>
+      </div>
+      <section class="anchor-list">
+        <a href="https://twitter.com/namsor_com" target="_blank" class="twitter-anchor">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/namsor/?originalSubdomain=fr" target="_blank" class="linkedin-anchor">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </section>
+    </section>
+  </section>
+  
+  <section class="copyright">
+    <img src="assets\logo.png">
+    <span class="data-span">81148844400019 - VAT FR84811488444 - Data Reg. 1876223</span>
+    <span class="terms-span">
+      <a href="https://apiphonenumber.com/assets/pdf/201803_NamSor_API_Terms_v007.pdf" target="_blank">{{ 'Footer.TermsConditions' | translate }}</a>
+      <a href="https://apiphonenumber.com/assets/pdf/NamSor_Data_Processing_Agreement_v007.pdf" target="_blank">DPA</a>
+    </span>
+    <span class="copyright-span">Copyright © 2019 NamSor is a French Limited Liability Company, Reg.</span>
+  </section>
+</footer>

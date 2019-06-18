@@ -1,0 +1,151 @@
+footer {
+    width: 100%;
+    color: #77838f;
+}
+
+a {
+    color: #77838f;
+    &:hover {
+        cursor: pointer;
+        color: rgb(55, 125, 255);
+    }
+}
+
+h5 {
+    color: #1e2022;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    a {
+        text-decoration: none;
+        margin: 0.5rem 0;
+        transition: all 200ms;
+    }
+}
+
+.email-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.email-anchor {
+    text-decoration: none;
+    margin: 0.5rem 0;
+    margin-left: 4px;
+}
+
+.anchor-list {
+    padding: 1rem 0;
+}
+
+.twitter-anchor {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    &:hover {
+        color: #38A1F3;
+    }
+}
+
+.linkedin-anchor {
+    font-size: 1.5rem;
+    &:hover {
+        color: #4875B4;
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid #e7eaf3;
+    img {
+        height: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    a, span {
+        font-size: 14px;
+    }
+}
+
+
+.terms-span {
+    a {
+        text-decoration: none;
+        margin: 0 2px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .info-section {
+        padding: 4rem 1rem;
+        // justify-content: center;
+    }
+
+    .navigation {
+        padding: 0 0.5rem;
+        justify-content: center;
+    }
+
+    .email-section {
+        padding: 0 0.5rem;
+        justify-content: center;
+    }
+
+    .social-media {
+        padding: 0 0.5rem;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .info-section {
+        padding: 4rem 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .contact {
+        padding: 1rem;
+        justify-content: center;
+        h5 {
+            text-align: center;
+        }
+    }
+
+    .social-media {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .anchor-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

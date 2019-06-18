@@ -1,0 +1,31 @@
+<section class="translation-section-container">
+  <header>
+    <h2>{{"API.TranslationTab.Heading" | translate}}</h2>
+    <p>{{"API.TranslationTab.Description" | translate}}</p>
+  </header>
+
+  <div class="input-group">
+    <!-- <div class="input-group-prepend">
+      <span class="input-group-text">First and last name</span>
+    </div> -->
+    <input type="text" aria-label="First name" placeholder="{{ 'First Name' | translate }}" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
+    <input type="text" aria-label="Last name" placeholder="{{ 'Last Name' | translate }}" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button" (click)="translate()">
+        <span *ngIf="!loading">{{"API.TranslationTab.Button" | translate}}</span>
+        <i class="fas fa-spinner" *ngIf="loading"></i>
+      </button>
+    </div>
+  </div>
+  <p class="err-msg" *ngIf="err">{{"API.TranslationTab.Error" | translate}}</p>
+
+  <main *ngIf="response">
+    <p><span class="result-name">{{response.firstName}} {{response.lastName}}</span>{{"API.TranslationTab.ResultTitle" | translate}}</p>
+    <section class="chinese-name-list">
+      <section *ngFor="let candidate of response.matchCandidates" class="candidate">
+        <span class="name">{{candidate.candidateName}}</span>
+        <span class="probability">{{candidate.probability | percent: '1.4-6'}}</span>
+      </section>
+    </section>
+  </main>
+</section>
