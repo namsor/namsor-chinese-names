@@ -30,7 +30,8 @@
             "Female": "Female"
         },
         "TranslationTab": {
-            "Heading": "Pinyin to Chinese",
+            "HeadingFirst": "Pinyin",
+            "HeadingSecond": "Chinese",
             "Description": "Translate Pinyin to Chinese characters",
             "Button": "Translate",
             "Error": "Make sure first name and last name are not empty.",
@@ -105,5 +106,7 @@
     },
     "First Name": "First name, e.g., Xiaoming",
     "Last Name": "Last name, e.g., Wang",
-    "Chinese Name": "Chinese name, e.g., 王小明"
+    "Chinese Name": "Chinese name, e.g., 王小明",
+    "Pinyin": "Pinyin",
+    "Chinese": "Chinese"
 }

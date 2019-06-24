@@ -30,7 +30,8 @@
             "Female": "女性"
         },
         "TranslationTab": {
-            "Heading": "拼音转汉字",
+            "HeadingFirst": "拼音",
+            "HeadingSecond": "汉字",
             "Description": "把拼音姓名转换为可能的汉字姓名",
             "Button": "转换",
             "Error": "请确保姓和名都不为空",
@@ -105,5 +106,7 @@
     },
     "First Name": "拼音姓，比如Xiaoming",
     "Last Name": "拼音名，比如Wang",
-    "Chinese Name": "中文姓名，比如王小明"
+    "Chinese Name": "中文姓名，比如王小明",
+    "Pinyin": "拼音",
+    "Chinese": "中文"
 }
