@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1024px;
+    height: 6rem;
 }
 
 .logo-section {
@@ -48,6 +49,19 @@ header {
     }
 }
 
+.dropdown {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.dropdown-item {
+    transition: all 200ms;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     header {
         padding: 1rem;
@@ -75,5 +89,11 @@ header {
 
     .fa-arrow-right {
         display: none;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }

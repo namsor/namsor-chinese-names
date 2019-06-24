@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     // max-width: 1024px;
+    min-height: calc(100vh - 6rem);
 
     header {
         max-width: 768px;
@@ -41,8 +42,10 @@
     main {
         max-width: 1024px;
         margin: auto;
-        padding-top: 16rem;
-        padding-bottom: 16rem;
+        min-height: 22rem;
+        margin-top: calc(50vh - 6rem - 11rem);
+        // padding-top: 16rem;
+        // padding-bottom: 16rem;
         width: 100%;
     }
 }
@@ -51,6 +54,7 @@
     margin-bottom: 4rem;
     border-bottom: 2px solid rgb(55, 125, 255);
     width: 21.5rem;
+    max-width: 100%;
 }
 
 .nav-link {
@@ -76,7 +80,7 @@
         }
 
         main {
-            padding: 16rem 5%;
+            padding: 0 5%;
         }
     }
 }
@@ -88,7 +92,15 @@
         }
 
         main {
-            padding: 8rem 1rem;
+            padding: 0 0.5rem;
         }
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .nav {
+        flex-wrap: nowrap;
     }
 }

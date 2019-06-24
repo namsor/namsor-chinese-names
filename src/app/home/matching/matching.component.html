@@ -16,7 +16,10 @@
     </div>
   </div>
   <p class="err-msg" *ngIf="err">{{"API.MatchingTab.Error" | translate}}</p>
-
+  <button class="btn btn-primary mobile-btn" type="button" (click)="match()">
+    <span *ngIf="!loading">{{"API.MatchingTab.Button" | translate}}</span>
+    <i class="fas fa-spinner" *ngIf="loading"></i>
+  </button>
   <main *ngIf="response">
     <p>{{"API.MatchingTab.ResultTitle1" | translate}} <span class="result-name">{{response.firstName}} {{response.lastName}}</span> and <span class="result-name">{{response.chineseName}}</span> {{"API.MatchingTab.ResultTitle2" | translate}}</p>
     <span class="probability">{{probability | percent: '1.4-6'}}</span>

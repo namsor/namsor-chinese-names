@@ -1,15 +1,20 @@
 <section class="translation-section-container">
   <header>
-    <h2>{{"API.TranslationTab.Heading" | translate}}</h2>
+    <h2>{{"API.TranslationTab.HeadingFirst" | translate}} <i class="fas fa-arrows-alt-h"></i> {{"API.TranslationTab.HeadingSecond" | translate}}</h2>
     <p>{{"API.TranslationTab.Description" | translate}}</p>
   </header>
 
   <div class="input-group">
-    <!-- <div class="input-group-prepend">
-      <span class="input-group-text">First and last name</span>
-    </div> -->
-    <input type="text" aria-label="First name" placeholder="{{ 'First Name' | translate }}" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
-    <input type="text" aria-label="Last name" placeholder="{{ 'Last Name' | translate }}" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{selectedMode | translate}}</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="selectedMode = 'Pinyin'">{{"Pinyin" | translate}}</a>
+        <a class="dropdown-item" (click)="selectedMode = 'Chinese'">{{"Chinese" | translate}}</a>
+      </div>
+    </div>
+    <input type="text" *ngIf="selectedMode === 'Pinyin'" aria-label="First name" [placeholder]="'First Name' | translate" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
+    <input type="text" *ngIf="selectedMode === 'Pinyin'" aria-label="Last name" [placeholder]="'Last Name' | translate" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <input type="text" *ngIf="selectedMode === 'Chinese'" aria-label="Chinese" [placeholder]="'Chinese Name' | translate" class="form-control" [(ngModel)]="chineseName" (ngModelChange)="onInputChnage()">
     <div class="input-group-append">
       <button class="btn btn-primary" type="button" (click)="translate()">
         <span *ngIf="!loading">{{"API.TranslationTab.Button" | translate}}</span>
@@ -18,6 +23,11 @@
     </div>
   </div>
   <p class="err-msg" *ngIf="err">{{"API.TranslationTab.Error" | translate}}</p>
+
+  <button class="btn btn-primary mobile-btn" type="button" (click)="translate()">
+    <span *ngIf="!loading">{{"API.TranslationTab.Button" | translate}}</span>
+    <i class="fas fa-spinner" *ngIf="loading"></i>
+  </button>
 
   <main *ngIf="response">
     <p><span class="result-name">{{response.firstName}} {{response.lastName}}</span>{{"API.TranslationTab.ResultTitle" | translate}}</p>

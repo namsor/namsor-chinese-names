@@ -10,6 +10,8 @@ import { ApiService } from 'src/app/services/api.service';
 export class TranslationComponent implements OnInit {
   firstName: string;
   lastName: string;
+  chineseName: string;
+  selectedMode: 'Chinese' | 'Pinyin' = 'Pinyin';
   response: TranslationResponse;
   loading: boolean;
   err: string;
@@ -19,22 +21,42 @@ export class TranslationComponent implements OnInit {
   }
 
   translate() {
-    if (this.firstName && this.lastName && !this.loading) {
-      this.err = null;
-      this.loading = true;
-      this.api.translatePinyin(this.firstName, this.lastName).subscribe(
-        result => {
-          this.loading = false;
-          this.response = result;
-          console.log(result);
-        },
-        err => {
-          this.loading = false;
-          console.log(err);
-        }
-      );
+    if (this.selectedMode === 'Chinese') {
+      if (this.chineseName && !this.loading) {
+        this.err = null;
+        this.loading = true;
+        this.api.translateChinese(this.chineseName).subscribe(
+          result => {
+            this.loading = false;
+            this.response = result;
+            console.log(result);
+          },
+          err => {
+            this.loading = false;
+            console.log(err);
+          }
+        );
+      } else {
+        this.err = 'Make sure Chinese name is not empty.';
+      }
     } else {
-      this.err = 'Make sure first name and last name are not empty.';
+      if (this.firstName && this.lastName && !this.loading) {
+        this.err = null;
+        this.loading = true;
+        this.api.translatePinyin(this.firstName, this.lastName).subscribe(
+          result => {
+            this.loading = false;
+            this.response = result;
+            console.log(result);
+          },
+          err => {
+            this.loading = false;
+            console.log(err);
+          }
+        );
+      } else {
+        this.err = 'Make sure first name and last name are not empty.';
+      }
     }
   }
 

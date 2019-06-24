@@ -5,7 +5,7 @@
   </section>
 
   <section class="nav-anchors">
-    <a class="nav-item" href='' i18n="Menu Item Home|home@@PageHeaderMenuItem1">{{"Navbar.Menu.Home" | translate}}</a>
+    <!-- <a class="nav-item" href='' i18n="Menu Item Home|home@@PageHeaderMenuItem1">{{"Navbar.Menu.Home" | translate}}</a> -->
     <a class="nav-item" href='/gender' i18n="Menu Item Gender|Go the gender check page@@PageHeaderMenuItem2">{{"Navbar.Menu.Gender" | translate}}</a>
     <a class="nav-item" href='/translation' i18n="Menu Item Translation|Go to translation of pinyin to chinese page@@PageHeaderMenuItem3">{{"Navbar.Menu.Translation" | translate}}</a>
     <a class="nav-item" href='matching' i18n="Menu Item Matching|Go to probability matching between pinyin and chinese name page@@PageHeaderMenuItem4">{{"Navbar.Menu.Matching" | translate}}</a>
@@ -15,3 +15,13 @@
     </a>
   </section>
 </header>
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-globe-asia"></i>&nbsp;<span>{{ 'Footer.Language' | translate }}</span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" (click)="changeLanguage('en')">{{ 'Footer.English' | translate }}</a>
+      <a class="dropdown-item" (click)="changeLanguage('zh')">{{ 'Footer.Chinese' | translate }}</a>
+    </div>
+  </div>

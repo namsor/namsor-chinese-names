@@ -21,11 +21,19 @@ export class ApiService {
     return this.http.get<TranslationResponse>(`${this.baseUrl}/chineseNameCandidates/${surname}/${givenName}`, this.httpOptions);
   }
 
-  indentifyGender(firstName: string, lastName: string) {
-    return this.http.get<GenderResponse>(`${this.baseUrl}/gender/${lastName}/${firstName}`, this.httpOptions);
+  translateChinese(chineseName: string) {
+    return this.http.get<any>(`${this.baseUrl}/pinyinChineseName/${chineseName}`, this.httpOptions);
   }
 
   findProbability() {
     return this.http.get('', this.httpOptions);
+  }
+
+  indentifyGender(firstName: string, lastName: string) {
+    return this.http.get<GenderResponse>(`${this.baseUrl}/genderGeo/${lastName}/${firstName}/CN`, this.httpOptions);
+  }
+
+  identifyGenderByChineseName(chineseName: string) {
+    return this.http.get<GenderResponse>(`${this.baseUrl}/genderFullGeo/${chineseName}/CN`, this.httpOptions);
   }
 }
