@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
-import TranslationResponse from 'src/app/models/translation-response';
+import MatchResponse from 'src/app/models/match-response';
 
 @Component({
   selector: 'app-matching',
@@ -11,12 +11,17 @@ export class MatchingComponent implements OnInit {
   firstName: string;
   lastName: string;
   chineseName: string;
-  response: {
-    firstName: string;
-    lastName: string;
+  result: {
+    httpResponse: MatchResponse,
+    firstName: string,
+    lastName: string,
     chineseName: string
+  } = {
+    httpResponse: null,
+    firstName: '',
+    lastName: '',
+    chineseName: ''
   };
-  probability = 0.0;
   loading: boolean;
   err: string;
   constructor(private api: ApiService) { }
@@ -24,24 +29,22 @@ export class MatchingComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Match Chinese name with Chinese Pinyin name
+   * Result will be stored in result variable
+   */
   match() {
     if (this.firstName && this.lastName && this.chineseName && !this.loading) {
       this.err = null;
       this.loading = true;
-      this.api.translatePinyin(this.firstName, this.lastName).subscribe(
-        result => {
+      this.api.findProbability(this.lastName, this.firstName, this.chineseName).subscribe(
+        response => {
+          console.log(response);
+          this.result.httpResponse = response;
+          this.result.firstName = this.firstName;
+          this.result.lastName = this.lastName;
+          this.result.chineseName = this.chineseName;
           this.loading = false;
-          result.matchCandidates.forEach(candidate => {
-            if (candidate.candidateName === this.chineseName.trim()) {
-              this.probability = candidate.probability;
-            }
-          });
-          this.response = {
-            firstName: result.firstName,
-            lastName: result.lastName,
-            chineseName: this.chineseName
-          };
-          console.log(result);
         },
         err => {
           this.loading = false;

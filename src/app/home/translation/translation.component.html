@@ -29,13 +29,21 @@
     <i class="fas fa-spinner" *ngIf="loading"></i>
   </button>
 
-  <main *ngIf="response">
-    <p><span class="result-name">{{response.firstName}} {{response.lastName}}</span>{{"API.TranslationTab.ResultTitle" | translate}}</p>
+  <main *ngIf="pinyinTranslationResponse">
+    <p><span class="result-name">{{pinyinTranslationResponse.firstName}} {{pinyinTranslationResponse.lastName}}</span>{{"API.TranslationTab.ResultTitle" | translate}}</p>
     <section class="chinese-name-list">
-      <section *ngFor="let candidate of response.matchCandidates" class="candidate">
+      <section *ngFor="let candidate of pinyinTranslationResponse.matchCandidates" class="candidate">
         <span class="name">{{candidate.candidateName}}</span>
         <span class="probability">{{candidate.probability | percent: '1.4-6'}}</span>
       </section>
+    </section>
+  </main>
+
+  <main *ngIf="chineseTranslationResponse">
+    <p><span class="result-name">{{chineseTranslationResponse.name}}</span>{{"API.TranslationTab.ChineseResultTitle" | translate}}</p>
+    <section class="chinese-translation-result" >
+      <span *ngIf="chineseTranslationResponse.firstLastName !== null">{{chineseTranslationResponse.firstLastName.firstName}} {{chineseTranslationResponse.firstLastName.lastName}}</span>
+      <span *ngIf="chineseTranslationResponse.firstLastName === null">{{"API.TranslationTab.NoResult" | translate}}</span>
     </section>
   </main>
 </section>

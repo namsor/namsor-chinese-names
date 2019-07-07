@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import TranslationResponse from 'src/app/models/translation-response';
 import { ApiService } from 'src/app/services/api.service';
+import ChineseTranslationResponse from 'src/app/models/chinese-translation-response';
 
 @Component({
   selector: 'app-translation',
@@ -12,7 +13,8 @@ export class TranslationComponent implements OnInit {
   lastName: string;
   chineseName: string;
   selectedMode: 'Chinese' | 'Pinyin' = 'Pinyin';
-  response: TranslationResponse;
+  pinyinTranslationResponse: TranslationResponse;
+  chineseTranslationResponse: ChineseTranslationResponse;
   loading: boolean;
   err: string;
   constructor(private api: ApiService) { }
@@ -21,6 +23,10 @@ export class TranslationComponent implements OnInit {
   }
 
   translate() {
+    // clear and rest previous result
+    this.chineseTranslationResponse = null;
+    this.pinyinTranslationResponse = null;
+
     if (this.selectedMode === 'Chinese') {
       if (this.chineseName && !this.loading) {
         this.err = null;
@@ -28,7 +34,7 @@ export class TranslationComponent implements OnInit {
         this.api.translateChinese(this.chineseName).subscribe(
           result => {
             this.loading = false;
-            this.response = result;
+            this.chineseTranslationResponse = result;
             console.log(result);
           },
           err => {
@@ -46,7 +52,7 @@ export class TranslationComponent implements OnInit {
         this.api.translatePinyin(this.firstName, this.lastName).subscribe(
           result => {
             this.loading = false;
-            this.response = result;
+            this.pinyinTranslationResponse = result;
             console.log(result);
           },
           err => {

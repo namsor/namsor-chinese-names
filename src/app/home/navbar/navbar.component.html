@@ -6,9 +6,9 @@
 
   <section class="nav-anchors">
     <!-- <a class="nav-item" href='' i18n="Menu Item Home|home@@PageHeaderMenuItem1">{{"Navbar.Menu.Home" | translate}}</a> -->
-    <a class="nav-item" href='/gender' i18n="Menu Item Gender|Go the gender check page@@PageHeaderMenuItem2">{{"Navbar.Menu.Gender" | translate}}</a>
-    <a class="nav-item" href='/translation' i18n="Menu Item Translation|Go to translation of pinyin to chinese page@@PageHeaderMenuItem3">{{"Navbar.Menu.Translation" | translate}}</a>
-    <a class="nav-item" href='matching' i18n="Menu Item Matching|Go to probability matching between pinyin and chinese name page@@PageHeaderMenuItem4">{{"Navbar.Menu.Matching" | translate}}</a>
+    <a class="nav-item" [routerLink]="[ '/gender']" i18n="Menu Item Gender|Go the gender check page@@PageHeaderMenuItem2">{{"Navbar.Menu.Gender" | translate}}</a>
+    <a class="nav-item" [routerLink]="[ '/translation']" i18n="Menu Item Translation|Go to translation of pinyin to chinese page@@PageHeaderMenuItem3">{{"Navbar.Menu.Translation" | translate}}</a>
+    <a class="nav-item" [routerLink]="[ '/matching']" i18n="Menu Item Matching|Go to probability matching between pinyin and chinese name page@@PageHeaderMenuItem4">{{"Navbar.Menu.Matching" | translate}}</a>
     <a class="sign-in-anchor" href="https://v2.namsor.com/NamSorAPIv2/sign-in.html">
       <span i18n="Menu Item Sign in|Sign In@@PageHeaderMenuItem5">{{"Navbar.Menu.Signin" | translate}}</span>
       <i class="fas fa-arrow-right"></i>
