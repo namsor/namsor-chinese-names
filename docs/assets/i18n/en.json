@@ -32,10 +32,12 @@
         "TranslationTab": {
             "HeadingFirst": "Pinyin",
             "HeadingSecond": "Chinese",
-            "Description": "Translate Pinyin to Chinese characters",
+            "Description": "Translate between Pinyin name and Chinese name",
             "Button": "Translate",
             "Error": "Make sure first name and last name are not empty.",
-            "ResultTitle": "'s Chinese name is (All possible names ranked by probabilities from high to low):"
+            "ResultTitle": "'s Chinese name is (All possible names ranked by probabilities from high to low):",
+            "ChineseResultTitle": "'s Pinyin name is:",
+            "NoResult": "No matching result"
         },
         "MatchingTab": {
             "Heading": "Match Chinese name and pinyin name to see probability",
@@ -43,7 +45,9 @@
             "Button": "Match",
             "ResultTitle1": "Matching probability between",
             "ResultTitle2": "is: ",
-            "Error": "Make sure first name, last name, and Chinese name are not empty."
+            "Error": "Make sure first name, last name, and Chinese name are not empty.",
+            "Match": "Match",
+            "Mismatch": "Mismatch"
         }
     },
     "Service": {

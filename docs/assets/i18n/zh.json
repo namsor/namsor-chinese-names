@@ -32,10 +32,12 @@
         "TranslationTab": {
             "HeadingFirst": "拼音",
             "HeadingSecond": "汉字",
-            "Description": "把拼音姓名转换为可能的汉字姓名",
+            "Description": "把拼音姓名和汉字姓名相互转换",
             "Button": "转换",
             "Error": "请确保姓和名都不为空",
-            "ResultTitle": "的中文姓名是 (按可能性从高到低排列)："
+            "ResultTitle": "的中文姓名是 (按可能性从高到低排列)：",
+            "ChineseResultTitle": "的拼音姓名是",
+            "NoResult": "没有匹配的结果"
         },
         "MatchingTab": {
             "Heading": "拼音姓名和汉字姓名相关度",
@@ -43,7 +45,9 @@
             "Button": "匹配",
             "ResultTitle1": "匹配相关度",
             "ResultTitle2": "是：",
-            "Error": "请确保拼音姓， 拼音名和中文名都不为空"
+            "Error": "请确保拼音姓， 拼音名和中文名都不为空",
+            "Match": "匹配",
+            "Mismatch": "不匹配"
         }
     },
     "Service": {
