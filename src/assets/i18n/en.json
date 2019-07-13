@@ -60,7 +60,7 @@
         "BasicPlan": {
             "Name": "Basic Plan",
             "Unit": "month",
-            "Item1": "1 name API call uses 11 units",
+            "Item1": "1 Chinese name API call uses 1 unit",
             "Item2": "Free up to 5000 units per Month",
             "Item3": "Price overage: 0.005 USD",
             "Button": "Get Started"
