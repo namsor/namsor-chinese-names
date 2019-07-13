@@ -24,7 +24,7 @@
     }
 
     main {
-        margin-top: 3rem;
+        margin: 3rem 0;
         border-radius: 0.5rem;
         box-shadow: 0 0 35px rgba(140, 152, 164, 0.125);
         transition: all 200ms;
@@ -74,6 +74,24 @@ input {
     }
 }
 
+.dropdown-toggle {
+    min-width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #007bff !important;
+    transition: all 200ms;
+    height: 3rem;
+    &:hover {
+        cursor: pointer;
+        color: #007bff !important;
+    }
+}
+
 .err-msg {
     color: red;
     width: 100%;
@@ -88,7 +106,26 @@ input {
     animation: rotate 1s infinite;
 }
 
+.mobile-btn {
+    display: none;
+}
+
 @-webkit-keyframes rotate {
     from { -webkit-transform: rotate(0deg) } 
     to { -webkit-transform: rotate(360deg) } 
+}
+
+@media screen and (max-width: 480px) {
+    .input-group-append {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }

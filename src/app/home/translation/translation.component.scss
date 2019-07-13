@@ -82,10 +82,33 @@ input {
     margin: 1rem 0;
 }
 
+.dropdown-toggle {
+    min-width: 6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.dropdown-item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #007bff !important;
+    transition: all 200ms;
+    height: 3rem;
+    &:hover {
+        cursor: pointer;
+        color: #007bff !important;
+    }
+}
+
 .fa-spinner {
     color: white;
     font-size: 1.5rem;
     animation: rotate 1s infinite;
+}
+
+.chinese-translation-result {
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 @-webkit-keyframes rotate {
@@ -123,5 +146,24 @@ input {
         font-weight: 500;
         font-size: 1.2rem;
         color: #77838f;
+    }
+}
+
+.mobile-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .input-group-append {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }

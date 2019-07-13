@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import GenderResponse from '../models/gender-response';
 import TranslationResponse from '../models/translation-response';
+import MatchResponse from '../models/match-response';
+import ChineseTranslationResponse from '../models/chinese-translation-response';
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +23,20 @@ export class ApiService {
     return this.http.get<TranslationResponse>(`${this.baseUrl}/chineseNameCandidates/${surname}/${givenName}`, this.httpOptions);
   }
 
-  indentifyGender(firstName: string, lastName: string) {
-    return this.http.get<GenderResponse>(`${this.baseUrl}/gender/${lastName}/${firstName}`, this.httpOptions);
+  translateChinese(chineseName: string) {
+    return this.http.get<ChineseTranslationResponse>(`${this.baseUrl}/pinyinChineseName/${chineseName}`, this.httpOptions);
   }
 
-  findProbability() {
-    return this.http.get('', this.httpOptions);
+  findProbability(chineseSurnameLatin: string, chineseGivenNameLatin: string, chineseName: string) {
+    return this.http.get<MatchResponse>(`${this.baseUrl}/chineseNameMatch/${chineseSurnameLatin}/${chineseGivenNameLatin}/${chineseName}`,
+      this.httpOptions);
+  }
+
+  indentifyGender(firstName: string, lastName: string) {
+    return this.http.get<GenderResponse>(`${this.baseUrl}/genderGeo/${lastName}/${firstName}/CN`, this.httpOptions);
+  }
+
+  identifyGenderByChineseName(chineseName: string) {
+    return this.http.get<GenderResponse>(`${this.baseUrl}/genderChineseName/${chineseName}`, this.httpOptions);
   }
 }

@@ -5,11 +5,16 @@
   </header>
 
   <div class="input-group">
-    <!-- <div class="input-group-prepend">
-      <span class="input-group-text">First and last name</span>
-    </div> -->
-    <input type="text" aria-label="First name" [placeholder]="'First Name' | translate" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
-    <input type="text" aria-label="Last name" [placeholder]="'Last Name' | translate" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{selectedMode | translate}}</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="selectedMode = 'Pinyin'">{{"Pinyin" | translate}}</a>
+        <a class="dropdown-item" (click)="selectedMode = 'Chinese'">{{"Chinese" | translate}}</a>
+      </div>
+    </div>
+    <input type="text" *ngIf="selectedMode === 'Pinyin'" aria-label="First name" [placeholder]="'First Name' | translate" class="form-control" [(ngModel)]="firstName" (ngModelChange)="onInputChnage()">
+    <input type="text" *ngIf="selectedMode === 'Pinyin'" aria-label="Last name" [placeholder]="'Last Name' | translate" class="form-control" [(ngModel)]="lastName" (ngModelChange)="onInputChnage()">
+    <input type="text" *ngIf="selectedMode === 'Chinese'" aria-label="Chinese name" [placeholder]="'Chinese Name' | translate" class="form-control" [(ngModel)]="chineseName" (ngModelChange)="onInputChnage()">
     <div class="input-group-append">
       <button class="btn btn-primary" type="button" (click)="search()">
         <span *ngIf="!loading">{{"API.GenderTab.Button" | translate}}</span>
@@ -17,10 +22,16 @@
       </button>
     </div>
   </div>
+
   <p class="err-msg" *ngIf="err">{{"API.GenderTab.Error" | translate}}</p>
 
+  <button class="btn btn-primary mobile-btn" type="button" (click)="search()">
+    <span *ngIf="!loading">{{"API.GenderTab.Button" | translate}}</span>
+    <i class="fas fa-spinner" *ngIf="loading"></i>
+  </button>
+
   <main *ngIf="response">
-    <p><span class="result-name">{{response.firstName}} {{response.lastName}}</span>{{ "API.GenderTab.ResultTitle" | translate}}</p>
+    <p><span class="result-name">{{selectedMode === 'Chinese' ? response.name : (response.firstName + ' ' + response.lastName)}}</span>{{ "API.GenderTab.ResultTitle" | translate}}</p>
     <span class="gender-text">{{response.likelyGender.toLocaleUpperCase() === 'MALE' ? ("API.GenderTab.Male" | translate) : ("API.GenderTab.Female" | translate)}}</span>
   </main>
 </section>
