@@ -21,8 +21,8 @@
             "Matching": "Matching"
         },
         "GenderTab": {
-            "Heading": "Gender",
-            "Description": "Find gender by first name and last name",
+            "Heading": "Chinese Name Gender",
+            "Description": "Infer gender by first name and last name",
             "Button": "Check",
             "Error": "Make sure first name and last name are not empty.",
             "ResultTitle": "'s gender is likely:",
@@ -30,8 +30,8 @@
             "Female": "Female"
         },
         "TranslationTab": {
-            "HeadingFirst": "Pinyin",
-            "HeadingSecond": "Chinese",
+            "HeadingFirst": "Translate Pinyin",
+            "HeadingSecond": "Chinese Name",
             "Description": "Translate between Pinyin name and Chinese name",
             "Button": "Translate",
             "Error": "Make sure first name and last name are not empty.",
@@ -40,7 +40,7 @@
             "NoResult": "No matching result"
         },
         "MatchingTab": {
-            "Heading": "Match Chinese name and pinyin name",
+            "Heading": "Match Chinese Name and Pinyin",
             "Description": "Check probability of a Chinese name and pinyin name to match with each other",
             "Button": "Match",
             "ResultTitle1": "Matching probability between",
@@ -57,7 +57,7 @@
     },
     "MachineLearning": {
         "Heading": "Machine Learning powered Namsor API",
-        "Description": "This service is powered by NamSor API, a powerful machine learning API to process Chinese names (detect gender, translate Pinyin to Chinese and calculate score/probability for matching Pinyin and Chinese name)."
+        "Description": "This service is powered by NamSor API, a powerful machine learning API to process Chinese names (detect gender, translate Pinyin to Chinese and calculate score/probability for matching Pinyin and Chinese name). The Origin API can also help distinguish Chinese, Japanese and other foreign names."
     },
     "PricePlans": {
         "Heading": "Fair, simple pricing for all",
