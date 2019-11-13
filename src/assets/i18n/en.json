@@ -1,6 +1,6 @@
 {
     "Navbar": {
-        "Title": "Namsor Chinese",
+        "Title": "NamSor Chinese API",
         "Menu": {
             "Home": "Home",
             "Gender": "Gender",
@@ -25,7 +25,7 @@
             "Description": "Find gender by first name and last name",
             "Button": "Check",
             "Error": "Make sure first name and last name are not empty.",
-            "ResultTitle": "'s gender is:",
+            "ResultTitle": "'s gender is likely:",
             "Male": "Male",
             "Female": "Female"
         },
@@ -40,7 +40,7 @@
             "NoResult": "No matching result"
         },
         "MatchingTab": {
-            "Heading": "Match Chinese name and pinyin name to see probability",
+            "Heading": "Match Chinese name and pinyin name",
             "Description": "Check probability of a Chinese name and pinyin name to match with each other",
             "Button": "Match",
             "ResultTitle1": "Matching probability between",
