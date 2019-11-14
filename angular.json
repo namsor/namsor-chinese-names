@@ -25,7 +25,11 @@
             "assets": [
               "src/favicon.ico",
               "src/logo.png",
-              "src/assets"
+              "src/assets",
+			  // This page is routed /static-pages/page1.html
+			  "src/assets/static-pages/chinese-name-api.html",
+			  // This page is routed /home/page1.html
+              { "glob": "chinese-name-api.html", "input": "src/assets/static-pages/", "output": "/" }	
             ],
             "styles": [
               "node_modules/bootstrap/scss/bootstrap.scss",
@@ -100,7 +104,12 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/logo.png",
+              "src/assets",
+			  // This page is routed /static-pages/page1.html
+			  "src/assets/static-pages/chinese-name-api.html",
+			  // This page is routed /home/page1.html
+              { "glob": "chinese-name-api.html", "input": "src/assets/static-pages/", "output": "/" }	
             ],
             "styles": [
               "src/styles.scss"

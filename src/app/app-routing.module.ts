@@ -40,6 +40,11 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'assets/static-pages/',
+    pathMatch: 'full',
+    redirectTo: '/'
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '404'
