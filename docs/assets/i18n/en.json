@@ -6,6 +6,7 @@
             "Gender": "Gender",
             "Translation": "Translation",
             "Matching": "Matching",
+            "IdentityVerification": "Identity Verification",
             "Signin": "Sign in"
         }
     },
@@ -18,7 +19,8 @@
         "Tabs": {
             "Gender": "Gender",
             "Translation": "Translation",
-            "Matching": "Matching"
+            "Matching": "Matching",
+            "IdentityVerification": "Identity Verification"
         },
         "GenderTab": {
             "Heading": "Chinese Name Gender",
@@ -48,6 +50,27 @@
             "Error": "Make sure first name, last name, and Chinese name are not empty.",
             "Match": "Match",
             "Mismatch": "Mismatch"
+        },
+        "IdentityVerificationTab": {
+            "HeadingPrefix": "Namsor’s Intelligent Name Translation ​",
+            "HeadingMiddle": "combined with​ ​",
+            "HeadingSuffix": "GDC’s Electronic Identity Verification ​",
+            "Problem": "The Problem",
+            "ProblemDescription": "Most onboarding systems collect and process Chinese Names in Latin script, while the best quality reference data used to verify citizens is maintained in Simplified Chinese. This results in high rates of failure for companies onboarding Chinese Nationals.",
+            "Regulations": "Regulations",
+            "ProblemRegulations": "Regulations mandating identification and verification of individuals and businesses force enterprises to introduce friction into the onboarding process. Companies need a low friction, scalable solution that keeps them in compliance. Verifying individuals varies in complexity from country to country depending on data availability, data quality, and in-country regulations.",
+            "Alphabets": "Alphabets",
+            "ProblemAlphabets": "The vast differences between Chinese and Latin alphabets are the root cause of friction in the translation process. Due to general translation challenges, structure, and tones, translating from Latin Script to Simplified Chinese does not often produce an accurate result. In reality, there are numerous combinations of Chinese characters that could be represented by one Latin translation. Because the Latin alphabet does not account for tone and inflection, there is no possible way to match each Latin Script translation of a Chinese name with the correct, accurate counterpart in Simplified Chinese.",
+            "button": "Learn More",
+            "Solution1": "Our Solution:",
+            "Solution2": "The Intelligent Name Translation Engine",
+            "Solution3": "Results",
+            "ProblemSolution1": "The Intelligent Name Translation Engine has been built with in-depth research, Artificial Intelligence,and machine learning to keep training the system. This allows for better verification of inputs of Latin Chinese names and their Simplified Chinese counterparts.",
+            "ProblemSolution2": "GDC’s identity verification platform, Worldview, paired with INTE, processes the Latin name against the top 20 highest probability name matches of The Simplified Chinese name and narrows down the list to at least the top four highest probability results. These are then appended to the additional user information and sent to our Consortium of Chinese Data Providers that will then verify the person.",
+            "ProblemSolution3": "The ability for companies to efficiently onboard Chinese Nationals with minimal friction, while maintaining compliance, and avoiding excessive cost and time associated with revamping back office systems for processing Chinese alphabets.",
+            "ProblemSolution4": "80% chance a match is returned within the 4 highest probability translations.",
+            "ProblemSolution5": "90% chance within the first 20 translations.",
+            "ProblemElectronic": "Electronic identity verification (eIDV) is the use of information in various types of data sources to quickly confirm whether an individual is who they claim to be based on personal information such as their name, date of birth, national id number, and address. Our service was built to help companies across many different industries to comply with Anti-Money Laundering (AML) and Know Your Customer (KYC) rules."
         }
     },
     "Service": {
