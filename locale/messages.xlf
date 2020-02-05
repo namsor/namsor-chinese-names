@@ -47,6 +47,15 @@
         <note priority="1" from="description">Go to probability matching between pinyin and chinese name page</note>
         <note priority="1" from="meaning">Menu Item Matching</note>
       </trans-unit>
+      <trans-unit id="PageHeaderMenuItem6" datatype="html">
+        <source>Identity Verification</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/navbar/navbar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Go to probability Identity Verification between pinyin and chinese name page</note>
+        <note priority="1" from="meaning">Menu Item Identity Verification</note>
+      </trans-unit>
       <trans-unit id="PageHeaderMenuItem5" datatype="html">
         <source>Sign in</source>
         <context-group purpose="location">

@@ -12,6 +12,7 @@ import { PricePlansComponent } from './home/price-plans/price-plans.component';
 import { GenderComponent } from './home/gender/gender.component';
 import { TranslationComponent } from './home/translation/translation.component';
 import { MatchingComponent } from './home/matching/matching.component';
+import { IdentityVerificationComponent } from './home/identityVerification/identityVerification.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
@@ -35,6 +36,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     GenderComponent,
     TranslationComponent,
     MatchingComponent,
+    IdentityVerificationComponent,
     ServiceComponent,
     MachineLearningComponent
   ],

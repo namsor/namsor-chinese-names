@@ -15,6 +15,9 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="[ '/matching']" [ngClass]="{'selected': currentTab === 'matching'}" (click)="currentTab = 'matching'">{{"API.Tabs.Matching" | translate}}</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ '/identityVerification']" [ngClass]="{'selected': currentTab === 'identityVerification'}" (click)="currentTab = 'identityVerification'">{{"API.Tabs.IdentityVerification" | translate}}</a>
+      </li>
     </ul>
     <router-outlet></router-outlet>
   </main>

@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { GenderComponent } from './home/gender/gender.component';
 import { TranslationComponent } from './home/translation/translation.component';
 import { MatchingComponent } from './home/matching/matching.component';
+import { IdentityVerificationComponent } from './home/identityVerification/identityVerification.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,13 @@ const routes: Routes = [
         component: MatchingComponent,
         data: {
           tab: 'matching'
+        }
+      },
+      {
+        path: 'identityVerification',
+        component: IdentityVerificationComponent,
+        data: {
+          tab: 'identityVerification'
         }
       }
     ]

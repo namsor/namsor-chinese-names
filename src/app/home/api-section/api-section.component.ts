@@ -7,7 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./api-section.component.scss']
 })
 export class ApiSectionComponent implements OnInit {
-  currentTab: 'gender' | 'translation' | 'matching' = 'gender';
+  currentTab: 'gender' | 'translation' | 'matching' | 'identityVerification' = 'gender';
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute) { }
 

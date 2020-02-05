@@ -1,0 +1,201 @@
+.identityVerification-section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        h5 {
+            color: #1e2022;
+            font-weight: bolder;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+            margin-top: 1.5rem;;
+
+            span {
+                font-style: normal;
+                font-weight: normal;
+                font-size: medium;
+            }
+        }
+
+        p {
+            color: #77838f;
+        }
+
+        .img-wrapper {
+            display: flex;
+            width: 75%;
+            justify-content: space-between;
+            align-items: center;
+            .img-namso {
+                width: 170px;
+            }
+            .img-plus {
+                width: 50px;
+            }
+            .img-gdc {
+                width: 350px;
+            }
+        }
+        
+    }
+    h3 {
+        font-weight: bold;
+    }
+    
+    .section-header-top {
+        display: flex;
+        width: 100%;
+        .content {
+            width: 65%;
+            font-size: 1.5em;
+
+        }
+
+        .image {
+            width: 450px;
+        }
+    }
+
+    .section-header-buttom {
+        margin-top: 40px;
+
+        display: flex;
+        width: 100%;
+        text-align: right;
+        .content {
+            
+            width: 60%;
+            font-size: 1.5em;
+
+        }
+
+        .image {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .section-alphabet{
+        margin-top: 100px;
+        .img-CNcharacter {
+            float: right;
+            margin: 10px;
+        }   
+        p {
+            font-size: 1.5rem;
+        }
+        .learnMore {
+            text-align: center;
+            a {
+                background-color: #3b77d7;
+                color: #fff;
+                display: inline-block;
+                padding: 30px;
+                border-radius: 50%;
+                font-size: 35px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .section-solution {
+        margin-top: 80px;
+        h3 {
+            text-align: center;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+           
+        .learnMore {
+            text-align: center;
+            a {
+                background-color: #3b77d7;
+                color: #fff;
+                display: inline-block;
+                padding: 30px;
+                border-radius: 50%;
+                font-size: 35px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .section-electronic {
+        margin-bottom: 40px;
+        margin-top: 80px;
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    main {
+        margin-top: 3rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 35px rgba(140, 152, 164, 0.125);
+        transition: all 200ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 4rem 2rem;
+
+        .result-name {
+            color:  rgb(55, 125, 255);
+            font-weight: 500;
+        }
+
+        .gender-text {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(0deg) } 
+    to { -webkit-transform: rotate(360deg) } 
+}
+
+
+.probability {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .input-group-append {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+        height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
