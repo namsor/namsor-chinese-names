@@ -6,7 +6,7 @@
             "Gender": "Gender",
             "Translation": "Translation",
             "Matching": "Matching",
-            "IdentityVerification": "Identity Verification",
+            "IdentityVerification": "China ID",
             "Signin": "Sign in"
         }
     },
@@ -20,7 +20,7 @@
             "Gender": "Gender",
             "Translation": "Translation",
             "Matching": "Matching",
-            "IdentityVerification": "Identity Verification"
+            "IdentityVerification": "China ID"
         },
         "GenderTab": {
             "Heading": "Chinese Name Gender",
@@ -56,7 +56,7 @@
             "HeadingMiddle": "combined with​ ​",
             "HeadingSuffix": "GDC’s Electronic Identity Verification ​",
             "Problem": "The Problem",
-            "ProblemDescription": "Most onboarding systems collect and process Chinese Names in Latin script, while the best quality reference data used to verify citizens is maintained in Simplified Chinese. This results in high rates of failure for companies onboarding Chinese Nationals.",
+            "ProblemDescription": "Most onboarding systems collect and process Chinese Names in Latin script, while the best quality reference data used to verify citizens is maintained in Simplified Chinese and resolves to a 18 digits China ID number (居民身份证). This results in high rates of failure for companies onboarding Chinese Nationals.",
             "Regulations": "Regulations",
             "ProblemRegulations": "Regulations mandating identification and verification of individuals and businesses force enterprises to introduce friction into the onboarding process. Companies need a low friction, scalable solution that keeps them in compliance. Verifying individuals varies in complexity from country to country depending on data availability, data quality, and in-country regulations.",
             "Alphabets": "Alphabets",
