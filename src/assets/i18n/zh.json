@@ -1,116 +1,139 @@
 {
     "Navbar": {
-        "Title": "Namsor 中文",
+        "Title": "NamSor 中文 API",
         "Menu": {
             "Home": "首页",
             "Gender": "性别",
             "Translation": "翻译",
             "Matching": "匹配",
-            "Signin": "登录"
+            "IdentityVerification": "中文 ID",
+            "Signin": "注册"
         }
     },
     "Intro": {
-        "Heading": "欢迎来到Namsor中文名API网站",
-        "Description": "在这里你可以把拼音姓名转换为可能的汉字姓名，根据拼音识别性别，或者计算一组拼音姓名和汉字姓名的匹配几率。",
+        "Heading": "欢迎使用Namsor中文姓名应用程序",
+        "Description": "你可以把拼音翻译成中文，根据拼音/中文中识别性别，或者得到一个中文和拼音名字匹配的概率.",
         "Button": "开始体验"
     },
     "API": {
         "Tabs": {
             "Gender": "性别",
             "Translation": "翻译",
-            "Matching": "匹配"
+            "Matching": "匹配",
+            "IdentityVerification": "中文 ID"
         },
         "GenderTab": {
-            "Heading": "性别",
-            "Description": "检测拼音姓名的对应性别",
+            "Heading": "中文名字性别",
+            "Description": "根据姓氏和名字推断性别",
             "Button": "检查",
-            "Error": "请确保姓和名都不为空",
-            "ResultTitle": "的性别是：",
+            "Error": "请确保姓氏和名字都不为空.",
+            "ResultTitle": "的性别很可能是:",
             "Male": "男性",
             "Female": "女性"
         },
         "TranslationTab": {
-            "HeadingFirst": "拼音",
-            "HeadingSecond": "汉字",
-            "Description": "把拼音姓名和汉字姓名相互转换",
+            "HeadingFirst": "翻译拼音",
+            "HeadingSecond": "中文名",
+            "Description": "把拼音名和汉字性名相互转换",
             "Button": "转换",
-            "Error": "请确保姓和名都不为空",
-            "ResultTitle": "的中文姓名是 (按可能性从高到低排列)：",
-            "ChineseResultTitle": "的拼音姓名是",
+            "Error": "请确保姓氏和名字都不为空.",
+            "ResultTitle": "的中文姓名是  (所有可能的名字按概率从高到低排列):",
+            "ChineseResultTitle": "的拼音名是:",
             "NoResult": "没有匹配的结果"
         },
         "MatchingTab": {
-            "Heading": "拼音姓名和汉字姓名相关度",
-            "Description": "检测一组拼音姓名和汉字姓名之间的相关度",
+            "Heading": "匹配中文名字和拼音",
+            "Description": "检查一个中文名和拼音名互相匹配的概率",
             "Button": "匹配",
             "ResultTitle1": "匹配相关度",
-            "ResultTitle2": "是：",
-            "Error": "请确保拼音姓， 拼音名和中文名都不为空",
+            "ResultTitle2": "是: ",
+            "Error": "请确保姓氏， 名字和中文名都不为空 .",
             "Match": "匹配",
             "Mismatch": "不匹配"
+        },
+        "IdentityVerificationTab": {
+            "HeadingPrefix": "Namsor的智能姓名翻译 ​",
+            "HeadingMiddle": "联合​ ​",
+            "HeadingSuffix": "GDC的电子身份验证 ​",
+            "Problem": "问题",
+            "ProblemDescription": "大多数新员工培训系统用拉丁文字收集和处理中文名字,而用于维护公民最优质的参考数据在验证简体中文和解决中国18位身份证号码(居民身份证)。这导致了公司在培训中国员工上的高失败率.",
+            "Regulations": "规定",
+            "ProblemRegulations": "要求对个人和企业进行识别和验证的规定迫使企业在入职过程中引入摩擦。公司需要一个低摩擦，可扩展的解决方案，使他们遵守。根据数据可用性、数据质量和国内法规，不同国家的个人验证复杂性各不相同.",
+            "Alphabets": "字母",
+            "ProblemAlphabets": "汉语和拉丁语之间的巨大差异是翻译过程中产生摩擦的根源。由于一般的翻译挑战，结构和声调，从拉丁文字翻译为简体中文往往不能产生准确的结果。在现实中，有许多汉字的组合可以用一个拉丁语翻译来表示。由于拉丁字母不考虑语气和音调变化，所以不可能将每个中文名字的拉丁字母翻译成正确的简体中文.",
+            "button": "了解更多",
+            "Solution1": "我们的解决方案:",
+            "Solution2": "智能姓名翻译引擎",
+            "Solution3": "结果",
+            "ProblemSolution1": "智能姓名翻译引擎经过深入研究，由人工智能、机器学习建立，可以不断训练系统。这样可以更好地验证输入的拉丁中文名称及其对应的简体中文名称.",
+            "ProblemSolution2": "GDC的身份验证平台Worldview与INTE配对，根据简体中文名字的前20个最可能匹配的拉丁名进行处理，并将列表缩小到至少前4个最可能匹配的结果。这些信息随后被添加到附加的用户信息中，并被发送给我们的中国数据提供商联盟，该联盟随后将对该人进行验证。.",
+            "ProblemSolution3": "公司能够以最小的摩擦有效地训练中国员工，同时保持合规，避免后台办公系统因修改处理中文字母而带来的过多成本和时间.",
+            "ProblemSolution4": "在有4个最高概率的翻译的情况下，有80%的机会得到一个匹配.",
+            "ProblemSolution5": "前20个翻译有90%的几率.",
+            "ProblemElectronic": "电子身份验证(eIDV)是在各种类型的数据源中使用信息，根据个人信息，如姓名、出生日期、国家身份证号码和地址，快速确认此人是否是他们声称的那个人。我们的服务旨在帮助许多不同行业的公司遵守反洗钱(AML)和了解客户(KYC)规则."
         }
     },
     "Service": {
-        "Heading": "免费注册并享有24/7支持",
-        "Description": "我们的API每月最多可以检查450个姓名。 我们还有其他套餐，可以为您的业务提供更高的订阅量。凭借最先进的基础设施，我们为您提供99.95％的正常运行时间和全天候监控和维护。",
+        "Heading": "开始免费与24小时的支持",
+        "Description": "我们的API每月会免费检查450个名称。我们有额外的订阅计划，以支持您的组织与更大的容量。拥有先进的基础设施，我们提供99.95%的正常运行时间和24/7的监测和维护.",
         "Button": "免费开始"
     },
     "MachineLearning": {
-        "Heading": "基于机器学习的Namsor API",
-        "Description": "这项服务由NamSor API提供支持，这是一个功能强大的机器学习API，用于处理中文名称（检测性别，将拼音翻译成中文并计算得分/概率以匹配拼音和中文名称）。"
+        "Heading": "Namsor API由机器学习支持",
+        "Description": "这项服务由NamSor API提供，这是一个强大的机器学习API，用于处理中文姓名(检测性别、将拼音翻译成中文并计算拼音与中文姓名匹配的概率)。Origin API还可以帮助区分中文、日文和其他外国名称."
     },
     "PricePlans": {
         "Heading": "简单公平，适用于所有人",
-        "Description": "没有额外添加费用，用多少支付多少",
+        "Description": "没有额外的费用.只为你使用的东西付费.",
         "BasicPlan": {
             "Name": "基础套餐",
             "Unit": "月",
             "Item1": "1个姓名API调用花费1单位",
             "Item2": "每月有5000免费单位",
             "Item3": "超额费用：0.005美元",
-            "Button": "开始使用"
+            "Button": "开始"
         },
         "ProPlan": {
             "Name": "高级套餐",
             "Unit": "月",
             "Item1": "包含: 10,000单位",
-            "Item2": "超额费用低廉",
+            "Item2": "超额费用低价",
             "Item3": "超额费用: 0.003美元",
-            "Button": "开始使用"
+            "Button": "开始"
         },
         "UltraPlan": {
             "Name": "超级套餐",
             "Unit": "月",
             "Item1": "简单易用",
             "Item2": "包含: 100,000单位",
-            "Item3": "超额费用低廉",
+            "Item3": "超额费用低价",
             "Item4": "超额费用: 0.002美元",
-            "Button": "开始使用"
+            "Button": "开始"
         }
     },
     "Footer": {
         "NavSub": {
-            "Title": "浏览",
+            "Title": "导航",
             "Gender": "性别",
             "Translation": "翻译",
             "Matching": "匹配",
-            "Signin": "登录"
+            "Signin": "注册"
         },
         "ContactSub": {
             "Title": "联系我们"
         },
         "TermsConditions": "条款和条件",
         "Language": "语言",
-        "English": "英文 English",
-        "Chinese": "中文 Chinese"
+        "English": "English 英文",
+        "Chinese": "Chinese 中文"
     },
     "404": {
         "Title": "抱歉，未找到对应的页面",
         "Button": "返回主页"
     },
-    "First Name": "拼音姓，比如Xiaoming",
-    "Last Name": "拼音名，比如Wang",
-    "Chinese Name": "中文姓名，比如王小明",
+    "First Name": "名字, e.g., Xiaoming",
+    "Last Name": "姓氏, e.g., Wang",
+    "Chinese Name": "中文名, e.g., 王小明",
     "Pinyin": "拼音",
     "Chinese": "中文"
 }

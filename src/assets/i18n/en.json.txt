@@ -37,7 +37,7 @@
             "Description": "把拼音名和汉字性名相互转换",
             "Button": "转换",
             "Error": "请确保姓氏和名字都不为空.",
-            "ResultTitle": "的中文姓名是  (所有可能的名字按概率从高到低排列):",
+            "ResultTitle": ""的中文姓名是  (所有可能的名字按概率从高到低排列):",
             "ChineseResultTitle": "的拼音名是:",
             "NoResult": "没有匹配的结果"
         },
