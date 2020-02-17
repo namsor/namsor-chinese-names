@@ -1,5 +1,6 @@
 REM npm install -g @angular/cli
 REM npm install 
+REM TO DEBUG ng serve --open
 REM WITHOUT CUSTOM DOMAIN ng build --prod --output-path docs --base-href /namsor-chinese-names/
 REM WITH CUSTOM DOMAIN ng build --prod --output-path docs --base-href /
 ng build --prod --output-path docs --base-href /
