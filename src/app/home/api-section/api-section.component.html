@@ -19,6 +19,9 @@
         <a class="nav-link" [routerLink]="[ '/identityVerification']" [ngClass]="{'selected': currentTab === 'identityVerification'}" (click)="currentTab = 'identityVerification'">{{"API.Tabs.IdentityVerification" | translate}}</a>
       </li>
     </ul>
+    <article>
+      If you would like to distinguish Japanese names in Kanji from Chinese names, translate Japanese names to/from Kanji or infer gender of japanese name, see also <a href="https://japanese-name.app/">Japanese name app</a>.
+    </article>    
     <router-outlet></router-outlet>
   </main>
 </section>
