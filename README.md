@@ -1,5 +1,7 @@
 # namsor-chinese-names
 
+This is the source code for Mini-site [chinese-names.app](https://chinese-names.app/gender).
+
 <h3>Build and publish</h3>
 ng build --prod --base-href "https://namsor.github.io/namsor-chinese-names/" <br>
 npx angular-cli-ghpages --dir=dist/namsor-chinese-names
